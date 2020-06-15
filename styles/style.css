@@ -1,0 +1,126 @@
+html {
+  font-size: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  background-image: linear-gradient(to right, #024569, #1d5f83);
+  color: white;
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  margin-top: -10px;
+  margin-left: -10px;
+  width: 100%;
+  height: 100px;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: linear-gradient(to right, #057299, #0599cf);
+}
+.nav-link {
+  font-size: 30px;
+  margin-right: 30px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+#welcome-section h1 {
+  font-size: 40px;
+}
+#projects {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  width: 100vw;
+  height: 1500px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to right, #990f05, #874d02);
+}
+#projects h1 {
+ grid-column-start: 1;
+ grid-column-end: 3;
+ margin-top: 100px;
+ text-align: center;
+ font-size: 40px;
+}
+.project-tile {
+  width: 500px;
+  height: 500px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: #024569;
+  align-content: center;
+}
+.project-image {
+  width: 500px;
+  height: 450px;
+  object-fit: cover;
+}
+#projects p {
+  margin-top: 5px;
+}
+#profile-link {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #024569;
+}
+#contact {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  width: 40vw;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+}
+#contact h1 {
+ grid-column-start: 1;
+ grid-column-end: 4;
+ margin-top: 100px;
+ text-align: center;
+ font-size: 40px;
+}
+.contact-link {
+  display: flex;
+  text-decoration: none;
+  height: 40px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1000px) {
+  #projects {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, #990f05, #874d02);
+}
+  .project-tile {
+    margin-top: 30px;
+  }
+  #profile-link {
+    margin-top: 30px;
+  }
+}
