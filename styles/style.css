@@ -1,8 +1,8 @@
 html {
   font-size: 20px;
-  font-family: Verdana, Geneva, sans-serif;
-  background-image: linear-gradient(to right, #024569, #1d5f83);
+  font-family: 'Montserrat', sans-serif;
   color: white;
+  background-image: linear-gradient(to right, #057299, #0599cf);
 }
 
 body {
@@ -19,7 +19,8 @@ body {
   height: 100px;
   justify-content: flex-end;
   align-items: center;
-  background-image: linear-gradient(to right, #057299, #0599cf);
+  background-color: #003559;
+  z-index: 1;
 }
 
 .nav-link {
@@ -51,7 +52,6 @@ body {
   height: 1500px;
   justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(to right, #990f05, #874d02);
 }
 
 #projects h1 {
@@ -125,6 +125,11 @@ body {
   border-radius: 10px;
 }
 
+a:hover {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
 @media screen and (max-width: 1000px) {
   #projects {
   display: flex;
@@ -133,7 +138,6 @@ body {
   height: auto;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to right, #990f05, #874d02);
 }
 
   .project-tile {
