@@ -12,11 +12,23 @@
 <body>
     <div id="intro">
         <div id="question">
-            <h1>Where in the world are you?</h1>
+            <form>
+                <label for="cities-select">Where in the world are you?</label>
+                <select name="cities" id="cities-select">
+                    <option value="">--</option>
+                    <option value="sydney">Sydney, AU</option>
+                    <option value="london">London, UK</option>
+                    <option value="moscow">Moscow, RU</option>
+                    <option value="tokyo">Tokyo, JP</option>
+                    <option value="paris">Paris, FR</option>
+                </select>
+                <button id="submit" class="myButton">Submit</button>
+            </form>
+            <button id="next" class="myButton">Next city</button>
         </div>
         <div id="answer">
             <h1>
-                W    R    O    N    G
+                W R O N G
             </h1>
         </div>
     </div>
