@@ -7,10 +7,32 @@
    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
    crossorigin=""></script>
    <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap">
 </head>
 <body>
-    <div id="mapid"></div>
-    <script src="scripts/script.js"></script>
-    <h1>Hello World</h1>
+    <div id="intro">
+        <div id="question">
+            <form id="dropdown">
+                <label for="cities-select">Where in the world are you?</label>
+                <select name="cities" id="cities-select">
+                    <option value="">--</option>
+                    <option value="sydney">Sydney, AU</option>
+                    <option value="london">London, UK</option>
+                    <option value="moscow">Moscow, RU</option>
+                    <option value="tokyo">Tokyo, JP</option>
+                    <option value="paris">Paris, FR</option>
+                </select>
+                <button id="submit" class="myButton">Submit</button>
+            </form>
+            <button id="next" class="myButton">Next city</button>
+        </div>
+        <div id="answer-area">
+            <h1 id="answer"></h1>
+        </div>
+    </div>
+    <div id="map-game">
+        <div id="mapid"></div>
+        <script src="scripts/script.js"></script>
+    </div>
 </body>
 </html>
