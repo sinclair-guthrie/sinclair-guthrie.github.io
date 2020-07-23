@@ -1,6 +1,33 @@
-h1 {
-    font-size: 10px;
+html {
+    background-color: #D8F9FD;
+    font-family: 'Amatic SC', cursive;
 }
+
+#intro {
+    height: 20vh;
+    width: 99vw;
+    font-size: 15px;
+    display: flex;
+}
+
+#question {
+    width: 70%;
+}
+
+#answer {
+    width: 30%;
+}
+
+#answer h1 {
+    font-size: 40px;
+    letter-spacing: 12px;
+}
+
+#map-game {
+    height: 79vh;
+    width: 99vw;
+}
+
 #mapid { 
-    height: 180px; 
+    height: 100%; 
 }
