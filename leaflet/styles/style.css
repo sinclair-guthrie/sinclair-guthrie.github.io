@@ -15,7 +15,6 @@ html {
 #intro {
     height: 20vh;
     width: 99vw;
-    font-size: 15px;
     display: flex;
 }
 
@@ -27,14 +26,14 @@ html {
     margin-bottom: auto;
 }
 
+#question label {
+    margin-right: 20px;
+}
+
 #question select {
     height: 35px;
     vertical-align: middle;
     font-size: 15px;
-}
-
-#question select {
-    margin-left: 30px;
 }
 
 .myButton {
@@ -52,7 +51,6 @@ html {
 	text-decoration: none;
     text-shadow: 0px 1px 0px #154682;
     vertical-align: middle;
-    margin-left: 10px;
 }
 .myButton:hover {
 	background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
@@ -75,10 +73,37 @@ html {
 }
 
 #map-game {
-    height: 79vh;
+    height: 78vh;
     width: 99vw;
 }
 
 #mapid { 
     height: 100%; 
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        touch-action: manipulation;
+    }
+    
+    #intro {
+        height: 30vh;
+    }
+    
+    #question {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    #answer-area {
+        width: 100%;
+    }
+
+    .myButton {
+        font-size: 20px;
+    }
+
+    #answer {
+        font-size: 30px;
+    }
 }
