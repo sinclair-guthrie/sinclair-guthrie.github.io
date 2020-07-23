@@ -21,7 +21,16 @@ const cityArr = [
     }
 ]
 
+const wrongArr = [
+    "WRONG",
+    "NOPE",
+    "UHH NO",
+    "INCORRECT",
+    "YIKES NO"
+]
+
 let currentQInd = 0;
+let currWrongInd = 0;
 
 var mymap = L.map('mapid').setView(cityArr[currentQInd].coord, 14);
 
@@ -45,12 +54,30 @@ function onMapClick(e) {
     
 mymap.on('click', onMapClick);
 
-function nextCity() {
+function nextCity() { 
     currentQInd++;
     if (currentQInd === cityArr.length) {
         currentQInd = 0;
     }
-    mymap.setView(cityArr[currentQInd].coord, 14)
+    mymap.setView(cityArr[currentQInd].coord, 14);
+    document.getElementById("answer").textContent = "";   // resetting answer to blank after changing cities
 }
 
 document.getElementById("next").onclick = nextCity;
+
+function submitAnswer() {
+    let val = document.getElementById("dropdown")[0].value;
+    let elem = document.getElementById("answer");
+    if (val === cityArr[currentQInd].name) {
+        elem.textContent = "CORRECT!";
+    } else {
+        elem.textContent = wrongArr[currWrongInd];
+        currWrongInd++;
+        if (currWrongInd === wrongArr.length) {
+            currWrongInd = 0;
+        }
+    }
+    return false;
+}
+
+document.getElementById("submit").onclick = submitAnswer;

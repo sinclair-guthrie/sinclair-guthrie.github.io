@@ -56,16 +56,15 @@ html {
 	top: 1px;
 }
 
-#answer {
+#answer-area {
     width: 30%;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-#answer h1 {
+#answer {
     font-size: 40px;
     letter-spacing: 12px;
-    visibility: hidden;
 }
 
 #map-game {

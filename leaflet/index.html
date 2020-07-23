@@ -12,7 +12,7 @@
 <body>
     <div id="intro">
         <div id="question">
-            <form>
+            <form id="dropdown">
                 <label for="cities-select">Where in the world are you?</label>
                 <select name="cities" id="cities-select">
                     <option value="">--</option>
@@ -26,10 +26,8 @@
             </form>
             <button id="next" class="myButton">Next city</button>
         </div>
-        <div id="answer">
-            <h1>
-                W R O N G
-            </h1>
+        <div id="answer-area">
+            <h1 id="answer"></h1>
         </div>
     </div>
     <div id="map-game">
