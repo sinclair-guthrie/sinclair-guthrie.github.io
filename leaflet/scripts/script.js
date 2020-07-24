@@ -61,6 +61,7 @@ function nextCity() {
     }
     mymap.setView(cityArr[currentQInd].coord, 14);
     document.getElementById("answer").textContent = "";   // resetting answer to blank after changing cities
+    return false;
 }
 
 document.getElementById("next").onclick = nextCity;
