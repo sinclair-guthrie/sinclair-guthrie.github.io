@@ -95,9 +95,8 @@ body {
 }
 
 #contact {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
+  display: flex;
+  flex-wrap: wrap;
   width: 40vw;
   height: 400px;
   margin-left: auto;
@@ -106,23 +105,17 @@ body {
 }
 
 #contact h1 {
- grid-column-start: 1;
- grid-column-end: 4;
- margin-top: 100px;
  text-align: center;
+ margin-top: 100px;
  font-size: 40px;
+ width: 100%;
 }
 
 .contact-link {
-  display: flex;
   text-decoration: none;
-  height: 40px;
-  width: 100px;
   justify-content: center;
   align-items: center;
   color: white;
-  border: 5px solid black;
-  border-radius: 10px;
 }
 
 a:hover {
