@@ -157,9 +157,3 @@ a:hover {
     margin-top: 30px;
   }
 }
-
-@media (orientation: portrait) {
-  html {
-    font-size: 30px;
-  }
-}
