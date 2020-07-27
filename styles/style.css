@@ -35,7 +35,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  text-align: left;
   justify-content: center;
 }
 
@@ -48,6 +47,7 @@ body {
   margin-left: 100px;
   margin-right: 100px;
   font-family: 'Domine', serif;
+  text-align: left;
   line-height: 1.5;
 }
 
@@ -131,7 +131,7 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   .nav-link {
     font-size: 25px;
   }
@@ -155,5 +155,11 @@ a:hover {
 
   #profile-link {
     margin-top: 30px;
+  }
+}
+
+@media (orientation: portrait) {
+  html {
+    font-size: 30px;
   }
 }
