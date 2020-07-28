@@ -159,6 +159,21 @@ a:hover {
   #navbar {
     height: 80px;
   }
+
+  #welcome-section h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  #headshot-cont {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #descr {
+    margin-left: 40px;
+  }
   
   #projects {
   display: flex;
@@ -181,6 +196,10 @@ a:hover {
 @media only screen and (min-width: 2000px) {
   html {
     font-size: 30px;
+  }
+
+  #welcome-section {
+    width: auto;
   }
 
   #welcome-section h1 {
