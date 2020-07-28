@@ -183,12 +183,22 @@ a:hover {
     font-size: 30px;
   }
 
-  #welcome-section {
+  #welcome-section h1 {
     font-size: 50px;
   }
 
   #headshot {
     width: 350px;
     height: 350px;
+  }
+
+  .project-tile {
+    width: 600px;
+    height: 600px;
+  }
+
+  .project-image {
+    width: 600px;
+    height: 540px;
   }
 }
