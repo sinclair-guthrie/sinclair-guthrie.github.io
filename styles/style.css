@@ -242,4 +242,8 @@ a:hover {
     width: 600px;
     height: 540px;
   }
+
+  #contact h1 {
+    margin-top: 200px;
+  }
 }
