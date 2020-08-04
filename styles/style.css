@@ -160,10 +160,6 @@ a:hover {
     font-size: 16px;
   }
 
-  #welcome-section {
-    height: 1000px;
-  }
-
   #welcome-section h1 {
     margin-left: auto;
     margin-right: auto;
@@ -193,11 +189,7 @@ a:hover {
     height: auto;
     justify-content: space-between;
     align-items: center;
-  }
-
-  #projects h1 {
-    margin-bottom: 50px;
-  }
+}
 
   .project-tile {
     margin-top: 30px;
@@ -224,7 +216,7 @@ a:hover {
 
   #welcome-section {
     width: auto;
-    height: auto;
+    height: 800px;
   }
 
   #welcome-section h1 {
@@ -234,6 +226,10 @@ a:hover {
   #headshot {
     width: 350px;
     height: 350px;
+  }
+
+  #projects h1 {
+    margin-bottom: 100px;
   }
 
   .project-tile {
