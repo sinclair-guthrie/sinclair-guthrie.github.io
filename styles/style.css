@@ -192,6 +192,7 @@ a:hover {
 
   .project-tile {
     margin-top: 30px;
+    width: 100%;
   }
 
   #profile-link {
@@ -206,6 +207,7 @@ a:hover {
 
   #welcome-section {
     width: auto;
+    height: auto;
   }
 
   #welcome-section h1 {
