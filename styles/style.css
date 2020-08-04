@@ -45,12 +45,12 @@ body {
 }
 
 #welcome-section h1 {
-  font-size: 40px;
+  font-size: 2rem;
   text-align: left;
   width: 100%;
   margin-left: 5%;
   margin-bottom: 0px;
-  margin-top: 130px;
+  margin-top: 100px;
 }
 
 #headshot-cont {
@@ -86,11 +86,11 @@ body {
 }
 
 #projects h1 {
- grid-column-start: 1;
- grid-column-end: 3;
- margin-top: 100px;
- text-align: center;
- font-size: 40px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .project-tile {
@@ -116,7 +116,7 @@ body {
 #profile-link {
   grid-column-start: 1;
   grid-column-end: 3;
-  font-size: 30px;
+  font-size: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -139,7 +139,7 @@ body {
 #contact h1 {
  text-align: center;
  margin-top: 150px;
- font-size: 40px;
+ font-size: 2rem;
  width: 100%;
 }
 
@@ -189,7 +189,12 @@ a:hover {
     height: auto;
     justify-content: space-between;
     align-items: center;
-}
+  }
+
+  #projects h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
   .project-tile {
     margin-top: 30px;
@@ -206,6 +211,11 @@ a:hover {
 
   #profile-link {
     margin-top: 30px;
+    font-size: 1.2rem;
+  }
+
+  #contact {
+    width: 100vw;
   }
 }
 
@@ -217,10 +227,6 @@ a:hover {
   #welcome-section {
     width: auto;
     height: 800px;
-  }
-
-  #welcome-section h1 {
-    font-size: 50px;
   }
 
   #headshot {
