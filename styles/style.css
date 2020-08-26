@@ -1,7 +1,17 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Domine;
+  src: url(Domine-Regular.ttf);
+}
+
 html {
   font-size: 20px;
   letter-spacing: 0.02em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   color: white;
   background: rgb(15,40,98);
   background: linear-gradient(298deg, rgba(15,40,98,1) 50%, rgba(19,51,124,1) 100%);
