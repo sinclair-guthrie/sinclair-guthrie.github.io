@@ -205,6 +205,10 @@ a:hover {
     font-size: 25px;
   }
 
+  #main-section {
+    max-width: 1799px;
+  }
+
   #headshot {
     max-height: 350px;
   }
