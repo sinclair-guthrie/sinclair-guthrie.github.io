@@ -125,7 +125,13 @@ body {
   margin-top: 5px;
 }
 
+#project-footer {
+  text-align: center;
+}
+
 #profile-link {
+  margin-left: auto;
+  margin-right: auto;
   font-size: 1.5rem;
   padding: 20px;
   text-decoration: none;
