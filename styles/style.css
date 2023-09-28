@@ -47,40 +47,58 @@ body {
 }
 
 #main-section {
-  width: 100vw;
-  max-width: 1499px;
+  max-width: 1200px;
+  width: 95%;
+  background-color: white;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 #intro-section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
+  text-align: left;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  line-height: 1.5;
+  text-align: justify;
+  background-color: white;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bolder;
   width: 100%;
-  text-align: center;
-  padding-top: 100px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 90%;
+  left: 50px;
+  height: 5px;
+  background-color: #0055a5;
 }
 
 #intro-section h1 {
   font-size: 2rem;
 }
 
+#headshot-div {
+  width: 25%;
+}
+
 #headshot {
   width: auto;
-  height: 100%;
   max-height: 300px;
 }
 
 .blurb {
-  line-height: 1.5;
-  text-align: justify;
-  background-color: white;
-  max-width: 55ch;
-  margin-top: 40px;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 75%;
 }
 
 .blurb p {
@@ -93,12 +111,13 @@ body {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 50px;
 }
 
 #projects h1 {
   padding-top: 100px;
   padding-bottom: 100px;
-  text-align: center;
+  text-align: justify;
   font-size: 2rem;
   width: 100%;
 }
@@ -171,69 +190,4 @@ a:hover {
 
 #resume-link {
   visibility: hidden;
-}
-
-@media only screen and (max-width: 1150px) {
-  html {
-    font-size: 16px;
-  }
-
-  #intro-section {
-    flex-direction: column;
-  }
-
-  .nav-link {
-    margin-right: 30px;
-  }
-  
-  #projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #projects h1 {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
-  }
-
-  .project-tile {
-    width: 100%;
-    height: 100%;
-    max-width: 500px;
-    max-height: 500px;
-    margin-bottom: 20px;
-  }
-
-  #profile-link {
-    margin-top: 30px;
-    font-size: 1.2rem;
-  }
-
-  #contact {
-    width: 75%;
-    margin-bottom: 100px;
-    margin-top: 100px;
-  }
-} 
-
-@media only screen and (min-width: 2000px) {
-  html {
-    font-size: 25px;
-  }
-
-  #main-section {
-    max-width: 1799px;
-  }
-
-  #headshot {
-    max-height: 350px;
-  }
-
-  .project-tile {
-    width: 600px;
-    height: 600px;
-  }
 }
